@@ -1,0 +1,341 @@
+<!-- View the html in Mozilla Firefox browser -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>View Other Profile</title>
+    <link rel="stylesheet" href="css/view_other_profile.css">
+    <script src="js/view_other_profile.js"></script>
+</head>
+<body>
+    <div class="parent-container">
+        <header class="parent-container-header">
+            <div class="logo-header-container">
+                <img src = "image/alli/logo.png" class="logo-header" />
+            </div>
+
+            <div class="parent-container-header nav_title">
+                <span class="home-text">LAUNDRY HUB</span>
+            </div>
+            <div class="parent-container-header-nav-img">
+                <img src="image/althea/menu.png" class="menu-pic" onclick="toggleMenu()">
+                <nav>
+                    <div class="sub-menu-wrap" id="subMenu">
+                        <div class="sub-menu">
+                            <div class="user-info">
+                                <h2> Laundry Hub </h2>
+                            </div>
+                            <hr>
+                            <a href="homepage.html" class ="sub-menu-link">
+                                <img src ="image/home.png">
+                                <p> Home </p>
+                                <span>></span>
+                            </a>
+                            <a href="search.html" class ="sub-menu-link">
+                                <img src ="image/search.png">
+                                <p> Explore </p>
+                                <span>></span>
+                            </a>
+                            <a href="profile.html" class ="sub-menu-link">
+                                <img src ="image/user-profile.png">
+                                <p> Profile </p>
+                                <span>></span>
+                            </a>
+                            <hr>
+                            <a href="log_in.html" class ="sub-menu-link">
+                                <img src ="image/log-in.png">
+                                <p> Log in </p>
+                                <span>></span>
+                            </a>
+                            <a href="homepage.html" class ="sub-menu-link">
+                                <img src ="image/log-out.png">
+                                <p> Log out </p>
+                                <span>></span>
+                            </a>
+                            <a href="sign_up.html" class ="sub-menu-link">
+                                <img src ="image/register.png">
+                                <p> Register </p>
+                                <span>></span>
+                            </a>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </header>
+        <div class="profile-container">
+            <div class="profile-card">
+                <div class="profile-card-inner">
+                    <div class="user-info">
+                        <div class="profile-card-inner-username-img-container">
+                            <div class="profile-card-inner-username-img">
+                                <img class="img_user" src="image/althea/baby-profile.png" alt="user's image"  />
+                            </div>
+
+                            <div class="profile-card-inner-username-stats">
+                                <div>
+                                    <span class="rating-number" ><b>70</b> ratings</span>
+                                    <span class="rating-avg">(<b>3.5</b> avg)</span><br>
+                                </div>
+                                <span class="reviews-number"><b>30</b> reviews</span>
+                            </div>
+                            <div>
+
+                            </div>
+                        </div>
+                        <div class="profile-card-inner-username-description-container">
+                            <div class="username-container">
+                                <span class="username">BABY</span>
+                            </div>
+                            <div class="userdesc-container">
+                                    <span class="description">
+                                        "Passionate student 📚 | Exploring the wonders of geology 🌐 |
+                                        Lifelong learner with a love for challenges 💪</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="user-info-bottom">
+
+                        <!-- REVIEWER SECTION-->
+                        <div class="reviews-container">
+                            <div class="reviews-header">
+                                <div class="reviews-header-title-container">
+                                    <div class="reviews-header-title">
+                                        <span class="review-username" >Aby's review</span>
+                                    </div>
+                                    <div class="separator"></div>
+                                </div>
+                            </div>
+                            <div id = "reviews-card1" class="reviews-card1">
+                                <div class="reviews-card1-top">
+                                    <div class="reviews-card1-stars1">
+                                        <!-- 5 STARS-->
+                                        <img class="img_star" src="image/star.png">
+                                        <img class="img_star" src="image/star.png">
+                                        <img class="img_star" src="image/star.png">
+                                        <img class="img_star" src="image/star.png">
+                                        <img class="img_star" src="image/star.png">
+                                    </div>
+                                    <div class="reviews-card1-store-bgd">
+                                        <span class="reviews-card1-store">Weclean</span>
+                                    </div>
+                                </div>
+
+                                <div class="reviews-card1-middle">
+                                    <div class="review">Weclean is fantastic! My clothes have never been so clean and fresh. The staff is friendly and efficient.</div>
+                                </div>
+                                <div class="reviews-card1-bottom">
+                                    <div class="reviews-card1-actions">
+                                        <div class="reviews-card1-bottom-likes">
+                                            <img class="img_like" src="image/like.png" />
+                                            <span class="num-likes">10</span>
+                                        </div>
+                                        <div class="reviews-card1-bottom-dislikes">
+                                            <img class="img_dislike" src="image/dislike.png" />
+                                            <span class="num-dislikes">10</span>
+                                        </div>
+                                    </div>
+                                    <span class="review_past-time">1 hour ago</span>
+                                </div>
+                            </div>
+                            <div id = "reviews-card2" class="reviews-card1">
+                                <div class="reviews-card1-top">
+                                    <div class="reviews-card1-stars1">
+                                        <!-- 5 STARS-->
+                                        <img class="img_star" src="image/star.png">
+                                        <img class="img_star" src="image/star.png">
+                                        <img class="img_star" src="image/star.png">
+                                        <img class="img_star" src="image/star.png">
+                                        <img class="img_star" src="image/star.png">
+                                    </div>
+                                    <div class="reviews-card1-store-bgd">
+                                        <div class="reviews-card1-store">Nonstop Laundry Shop Malate</div>
+                                    </div>
+                                </div>
+
+                                <div class="reviews-card1-middle">
+                                    <div class="review">A lifesaver! Quick and reliable service, especially in urgent situations</div>
+                                </div>
+
+                                <div class="reviews-card1-bottom">
+                                    <div class="reviews-card1-actions">
+                                        <div class="reviews-card1-bottom-likes">
+                                            <img class="img_like" src="image/like.png" />
+                                            <span class="num-likes">10</span>
+                                        </div>
+                                        <div class="reviews-card1-bottom-dislikes">
+                                            <img class="img_dislike" src="image/dislike.png" />
+                                            <span class="num-dislikes">10</span>
+                                        </div>
+                                    </div>
+                                    <span class="review_past-time">1 hour ago</span>
+                                </div>
+                            </div>
+                            <div id = "reviews-card3" class="reviews-card1">
+                                <div class="reviews-card1-top">
+                                    <div class="reviews-card1-stars1">
+                                        <!-- 5 STARS-->
+                                        <img class="img_star" src="image/star.png">
+                                        <img class="img_star" src="image/star.png">
+                                        <img class="img_star" src="image/star.png">
+                                        <img class="img_star" src="image/star.png">
+                                        <img class="img_star" src="image/star.png">
+                                    </div>
+                                    <div class="reviews-card1-store-bgd">
+                                        <span class="reviews-card1-store">7Folds Laundry</span>
+                                    </div>
+                                </div>
+
+                                <div class="reviews-card1-middle">
+                                    <div class="review">7Folds Laundry provides excellent service! My clothes always come back neatly folded and smelling fresh.</div>
+                                </div>
+
+                                <div class="reviews-card1-bottom">
+                                    <div class="reviews-card1-actions">
+                                        <div class="reviews-card1-bottom-likes">
+                                            <img class="img_like" src="image/like.png" />
+                                            <span class="num-likes">10</span>
+                                        </div>
+                                        <div class="reviews-card1-bottom-dislikes">
+                                            <img class="img_dislike" src="image/dislike.png"/>
+                                            <span class="num-dislikes">10</span>
+                                        </div>
+                                    </div>
+                                    <span class="review_past-time">1 hour ago</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- COMMENT SECTION-->
+                        <div class="comments-container">
+                            <div class="comments-header">
+                                <div class="comments-header-title-container">
+                                    <div class="comments-header-title">
+                                        <span class="comments-username" >Aby's comment</span>
+                                    </div>
+                                    <div class="separator"></div>
+                                </div>
+                            </div>
+                            <div id = "comments-card1" class="comments-card1">
+                                <div class="comments-card1-top">
+                                    <div class="comments-card1-stars1">
+                                        <!-- 5 STARS-->
+                                        <img class="img_star" src="image/star.png">
+                                        <img class="img_star" src="image/star.png">
+                                        <img class="img_star" src="image/star.png">
+                                        <img class="img_star" src="image/star.png">
+                                        <img class="img_star" src="image/star.png">
+                                    </div>
+                                    <div class="comments-card1-store-bgd">
+                                        <div class="comments-card1-store">Weclean</div>
+                                    </div>
+                                </div>
+
+                                <div class="comments-card1-middle">
+                                    <div class="review">"Baby, you should try Weclean! They really know how to handle your laundry well.</div>
+                                </div>
+
+                                <div class="comments-card1-bottom">
+                                    <div class="comments-card1-actions">
+                                        <div class="comments-card1-bottom-likes">
+                                            <img class="img_like" src="image/like.png" />
+                                            <span class="num-likes">10</span>
+                                        </div>
+                                        <div class="comments-card1-bottom-dislikes">
+                                            <img class="img_dislike" src="image/dislike.png" />
+                                            <span class="num-dislikes">10</span>
+                                        </div>
+                                    </div>
+                                    <span class="comments_past-time">1 hour ago</span>
+                                </div>
+                            </div>
+                            <div id = "comments-card2" class="comments-card1">
+                                <div class="comments-card1-top">
+                                    <div class="comments-card1-stars1">
+                                        <!-- 5 STARS-->
+                                        <img class="img_star" src="image/star.png">
+                                        <img class="img_star" src="image/star.png">
+                                        <img class="img_star" src="image/star.png">
+                                        <img class="img_star" src="image/star.png">
+                                        <img class="img_star" src="image/star.png">
+                                    </div>
+                                    <div class="comments-card1-store-bgd">
+                                        <!-- Brown bgd-->
+                                        <span class="comments-card1-store">Nonstop Laundry Shop Malate</span>
+                                    </div>
+                                </div>
+
+                                <div class="comments-card1-middle">
+                                    <div class="review">Baby, next time you're in a rush, Nonstop Laundry in Malate is the place to go.</div>
+                                </div>
+
+                                <div class="comments-card1-bottom">
+                                    <div class="comments-card1-actions">
+                                        <div class="comments-card1-bottom-likes">
+                                            <img class="img_like" src="image/like.png" />
+                                            <span class="num-likes">10</span>
+                                        </div>
+                                        <div class="comments-card1-bottom-dislikes">
+                                            <img class="img_dislike" src="image/dislike.png" />
+                                            <span class="num-dislikes">10</span>
+                                        </div>
+                                    </div>
+                                    <span class="comments_past-time">1 hour ago</span>
+                                </div>
+                            </div>
+                            <div id = "comments-card3" class="comments-card1">
+                                <div class="comments-card1-top">
+                                    <div class="comments-card1-stars1">
+                                        <!-- 5 STARS-->
+                                        <img class="img_star" src="image/star.png">
+                                        <img class="img_star" src="image/star.png">
+                                        <img class="img_star" src="image/star.png">
+                                        <img class="img_star" src="image/star.png">
+                                        <img class="img_star" src="image/star.png">
+                                    </div>
+                                    <div class="comments-card1-store-bgd">
+                                        <span class="comments-card1-store">7Folds Laundry</span>
+                                    </div>
+                                </div>
+
+                                <div class="comments-card1-middle">
+                                    <div class="review">Baby, try 7Folds Laundry next time. Your clothes will thank you for it!</div>
+                                </div>
+
+                                <div class="comments-card1-bottom">
+                                    <div class="comments-card1-actions">
+                                        <div class="comments-card1-bottom-likes">
+                                            <img class="img_like" src="image/like.png" />
+                                            <span class="num-likes">10</span>
+                                        </div>
+                                        <div class="comments-card1-bottom-dislikes">
+                                            <img class="img_dislike" src="image/dislike.png" />
+                                            <span class="num-dislikes">10</span>
+                                        </div>
+                                    </div>
+                                    <span class="comments_past-time">1 hour ago</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- POPUP SECTION-->
+                <div class="popup-review-comment-container">
+                    <div class="popup-content">
+                        <div class="container-top">
+                            <button class="popup-close-button" onclick="hidePopup()">Close</button>
+                        </div>
+                        <div class="container-bottom">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        let subMenu = document.getElementById("subMenu");
+        function toggleMenu(){
+            subMenu.classList.toggle("open-menu");
+        }
+    </script>
+</body>
+</html>

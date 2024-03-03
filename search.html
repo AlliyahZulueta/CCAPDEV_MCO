@@ -1,0 +1,115 @@
+<!-- View the html in Mozilla Firefox browser -->
+
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+  <meta charset="UTF-8">
+  <title>Search</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="css/search.css">
+  <script src="js/search.js"></script>
+</head>
+<body>
+  <div class="parent-container">
+
+      <header class="parent-container-header">
+          <div class="logo-header-container">
+              <img src = "image/alli/logo.png" class="logo-header" />
+          </div>
+
+          <div class="parent-container-header nav_title">
+              <span class="home-text">LAUNDRY HUB</span>
+          </div>
+           <div class="parent-container-header nav_img">
+             <img src="image/althea/menu.png" class="menu-pic" onclick="toggleMenu()">
+               <nav>
+                   <div class="sub-menu-wrap" id="subMenu">
+                       <div class="sub-menu">
+                           <div class="user-info">
+                               <h2> Laundry Hub </h2>
+                           </div>
+                           <hr>
+                           <a href="homepage.html" class ="sub-menu-link">
+                               <img src ="image/home.png">
+                               <p> Home </p>
+                               <span>></span>
+                           </a>
+
+                           <a href="search.html" class ="sub-menu-link">
+                               <img src ="image/search.png">
+                               <p> Explore </p>
+                               <span>></span>
+                           </a>
+
+                           <a href="profile.html" class ="sub-menu-link">
+                               <img src ="image/user-profile.png">
+                               <p> Profile </p>
+                               <span>></span>
+                           </a>
+                           <hr>
+
+                           <a href="log_in.html" class ="sub-menu-link">
+                               <img src ="image/log-in.png">
+                               <p> Log in </p>
+                               <span>></span>
+                           </a>
+
+                           <a href="homepage.html" class ="sub-menu-link">
+                               <img src ="image/log-out.png">
+                               <p> Log out </p>
+                               <span>></span>
+                           </a>
+
+                           <a href="sign_up.html" class ="sub-menu-link">
+                               <img src ="image/register.png">
+                               <p> Register </p>
+                               <span>></span>
+                           </a>
+                       </div>
+                   </div>
+             </nav>
+           </div>
+   </header>
+
+    <div class="search-container">
+      <div class="search-panel-outer">
+        <img src="image/image.jpg" class="background_img"/>
+        <div class="searchlbl">Find nearby laundry services.</div>
+
+        <div class="search-text-area-border">
+          <form class ="search-form-container" action="search_result.html" onsubmit="updatePlaceholder()">
+            <div class="search-menu">
+              <input id="search-txt" name="search-txt" class="textfield" placeholder="   Enter establishment’s name or description" />
+            </div>
+            <div class="filter-menu">
+              <select id="filter" name="filter" class="filter_rating">
+                <option value="filterlbl">FILTER</option>
+                <option value="5">5 Stars</option>
+                <option value="4">4 Stars</option>
+                <option value="3">3 Stars</option>
+                <option value="2">2 Stars</option>
+                <option value="1">1 Star</option>
+              </select>
+            </div>
+            <div class="search-icon-container">
+              <button type="submit" class="search_button">
+                <img src="image/search_logo.png" alt="Search" class="search_icon" />
+              </button>
+            </div>
+          </form>
+        </div>
+
+      </div>
+    </div>
+    </div>
+  </div>
+
+  <script>
+    let subMenu = document.getElementById("subMenu");
+    function toggleMenu(){
+      subMenu.classList.toggle("open-menu");
+    }
+  </script>
+
+</body>
+</html>

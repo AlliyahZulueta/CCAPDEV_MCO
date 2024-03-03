@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Edit Profile</title>
+    <link rel="stylesheet" href="css/edit-profile.css" />
+  </head>
+  <body>
+    <div class="container">
+      <nav>
+        <img src="image/alli/logo.png" class="logo" />
+        <h3>LAUNDRY HUB</h3>
+        <img
+          src="image/alli/menu.png"
+          class="menu-pic"
+          onclick="toggleMenu()"
+        />
+
+        <div class="sub-menu-wrap" id="subMenu">
+          <div class="sub-menu">
+            <div class="user-info">
+              <h2>Laundry Hub</h2>
+            </div>
+            <hr />
+            <a href="homepage.html" class="sub-menu-link">
+              <img src="image/alli/home.png" />
+              <p>Home</p>
+              <span>></span>
+            </a>
+
+            <a href="search.html" class="sub-menu-link">
+              <img src="image/alli/explore.png" />
+              <p>Explore</p>
+              <span>></span>
+            </a>
+
+            <a href="profile.html" class="sub-menu-link">
+              <img src="image/alli/user-profile.png" />
+              <p>Profile</p>
+              <span>></span>
+            </a>
+            <hr />
+
+            <a href="log_in.html" class="sub-menu-link">
+              <img src="image/alli/log-in.png" />
+              <p>Log in</p>
+              <span>></span>
+            </a>
+
+            <a href="homepage.html" class="sub-menu-link">
+              <img src="image/alli/log-out.png" />
+              <p>Log out</p>
+              <span>></span>
+            </a>
+
+            <a href="sign_up.html" class="sub-menu-link">
+              <img src="image/alli/register.png" />
+              <p>Register</p>
+              <span>></span>
+            </a>
+          </div>
+        </div>
+      </nav>
+
+      <div class="form-box">
+        <div class="pfp">
+          <label for="profileImage" class="profile-image-label">
+            <img
+              src="image/alli/profile.png"
+              alt="Your Image"
+              class="profile-image"
+              id="previewImage"
+            />
+            <span class="insert-image-text">Insert Image</span>
+          </label>
+          <input
+            type="file"
+            id="profileImage"
+            accept="image/*"
+            style="display: none"
+            onchange="previewProfileImage(event)"
+          />
+        </div>
+        <div class="username">
+          <i>@zuluetally</i>
+        </div>
+        <div class="name-edit">
+          <div class="name">
+            <h1 id="userName">Alliyah Zulueta</h1>
+          </div>
+        </div>
+        <hr />
+        <div class="display-details">
+          <div class="user-details">
+            <h4>First Name:</h4>
+            <input type="text" value="Alliyah" contenteditable="true" />
+          </div>
+
+          <div class="user-details">
+            <h4>Last Name:</h4>
+            <input type="text" value="Zulueta" contenteditable="true" />
+          </div>
+
+          <div class="user-details">
+            <h4>Username:</h4>
+            <input type="text" value="zuluetally" contenteditable="true" />
+          </div>
+
+          <div class="user-details">
+            <h4>Email:</h4>
+            <input
+              type="text"
+              value="alliyah_zulueta@dlsu.edu.ph"
+              contenteditable="true"
+            />
+          </div>
+
+          <div class="user-details">
+            <h4>Mobile Number:</h4>
+            <input type="text" value="09152716285" contenteditable="true" />
+          </div>
+        </div>
+
+        <div class="user-details">
+          <h4>Short Description:</h4>
+          <label>
+            <textarea contenteditable="true">Computer Science student</textarea>
+          </label>
+        </div>
+
+        <div class="btn-field">
+          <form action="profile.html">
+            <button type="submit" id="saveBtn">Save</button>
+          </form>
+        </div>
+      </div>
+    </div>
+    <script src="js/edit-profile.js"></script>
+  </body>
+</html>

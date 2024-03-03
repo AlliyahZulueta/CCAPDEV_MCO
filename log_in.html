@@ -1,0 +1,99 @@
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title> Log In </title>
+        <link rel = "stylesheet" href="css/log_in_style.css">
+    </head>
+
+    <body>
+       <div class="container">
+        <nav>
+            <img src="image/alli/logo.png" class="logo" />
+            <h3>LAUNDRY HUB</h3>
+            <img
+              src="image/alli/menu.png"
+              class="menu-pic"
+              onclick="toggleMenu()"
+            />
+    
+            <div class="sub-menu-wrap" id="subMenu">
+              <div class="sub-menu">
+                <div class="user-info">
+                  <h2>Laundry Hub</h2>
+                </div>
+                <hr />
+                <a href="homepage.html" class="sub-menu-link">
+                  <img src="image/alli/home.png" />
+                  <p>Home</p>
+                  <span>></span>
+                </a>
+    
+                <a href="search.html" class="sub-menu-link">
+                  <img src="image/alli/explore.png" />
+                  <p>Explore</p>
+                  <span>></span>
+                </a>
+    
+                <a href="profile.html" class="sub-menu-link">
+                  <img src="image/alli/user-profile.png" />
+                  <p>Profile</p>
+                  <span>></span>
+                </a>
+                <hr />
+    
+                <a href="log_in.html" class="sub-menu-link">
+                  <img src="image/alli/log-in.png" />
+                  <p>Log in</p>
+                  <span>></span>
+                </a>
+    
+                <a href="homepage.html" class="sub-menu-link">
+                  <img src="image/alli/log-out.png" />
+                  <p>Log out</p>
+                  <span>></span>
+                </a>
+    
+                <a href="sign_up.html" class="sub-menu-link">
+                  <img src="image/alli/register.png" />
+                  <p>Register</p>
+                  <span>></span>
+                </a>
+              </div>
+            </div>
+          </nav>
+
+
+
+            <div class="form-box">
+                <h1> Log in</h1>
+                <h3>Welcome Back!</h3>
+                <p> Log in by typing your username and password</p>
+                <form>
+                    
+                    <div class="input-group">
+                        <div class="input-field">
+
+                            <input type="text" placeholder="Username">
+                        </div>
+
+                        <div class="input-field">
+                        
+                            <input type="password" id="passwordInput" placeholder="Password">
+                            <img src="image/alli/password.png" id="togglePassword" alt="Toggle Password">
+                        </div>
+                        <p> No account? Sign up<a href="sign_up.html"> Here!</a> </p>
+
+                    </div>
+                    <div class="btn-field">
+                        <button type="button" id="loginBtn">Log in</button>
+                    </div>
+
+                    
+                </form>
+            </div>
+       </div>
+
+       <script src="js/log_in.js"></script>
+    </body>
+
+</html>

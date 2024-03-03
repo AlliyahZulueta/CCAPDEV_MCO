@@ -1,0 +1,211 @@
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>User Profile</title>
+    <link rel="stylesheet" href="css/profile_style.css" />
+  </head>
+
+  <body>
+    <div class="container">
+      <nav>
+        <img src="image/alli/logo.png" class="logo" />
+        <h3>LAUNDRY HUB</h3>
+        <img
+          src="image/alli/menu.png"
+          class="menu-pic"
+          onclick="toggleMenu()"
+        />
+
+        <div class="sub-menu-wrap" id="subMenu">
+          <div class="sub-menu">
+            <div class="user-info">
+              <h2>Laundry Hub</h2>
+            </div>
+            <hr />
+            <a href="homepage.html" class="sub-menu-link">
+              <img src="image/alli/home.png" />
+              <p>Home</p>
+              <span>></span>
+            </a>
+
+            <a href="search.html" class="sub-menu-link">
+              <img src="image/alli/explore.png" />
+              <p>Explore</p>
+              <span>></span>
+            </a>
+
+            <a href="profile.html" class="sub-menu-link">
+              <img src="image/alli/user-profile.png" />
+              <p>Profile</p>
+              <span>></span>
+            </a>
+            <hr />
+
+            <a href="log_in.html" class="sub-menu-link">
+              <img src="image/alli/log-in.png" />
+              <p>Log in</p>
+              <span>></span>
+            </a>
+
+            <a href="homepage.html" class="sub-menu-link">
+              <img src="image/alli/log-out.png" />
+              <p>Log out</p>
+              <span>></span>
+            </a>
+
+            <a href="sign_up.html" class="sub-menu-link">
+              <img src="image/alli/register.png" />
+              <p>Register</p>
+              <span>></span>
+            </a>
+          </div>
+        </div>
+      </nav>
+
+      <div class="bottom-container">
+        <div class="profile-details">
+          <div class="pfp">
+            <img src="image/alli/profile.png" />
+          </div>
+          <div class="username">
+            <i>@zuluetally</i>
+          </div>
+          <div class="name-edit">
+            <div class="name">
+              <h1>Alliyah Zulueta</h1>
+            </div>
+            <div class="edit-profile">
+              <a href="edit-profile.html"> Edit Profile </a>
+            </div>
+          </div>
+          <hr />
+          <div class="display-details">
+            <div class="user-details">
+              <h4>First Name:</h4>
+              <input type="text" value="Alliyah" disabled />
+            </div>
+
+            <div class="user-details">
+              <h4>Last Name:</h4>
+              <input type="text" value="Zulueta" disabled />
+            </div>
+
+            <div class="user-details">
+              <h4>Short Description:</h4>
+              <label>
+                <textarea
+                  placeholder="Computer Science Student"
+                  disabled
+                ></textarea>
+              </label>
+            </div>
+
+            <div class="user-details">
+              <h4>Email:</h4>
+              <input type="text" value="alliyah_zulueta@dlsu.edu.ph" disabled />
+            </div>
+
+            <div class="user-details">
+              <h4>Mobile Number:</h4>
+              <input type="text" value="09152716285" disabled />
+            </div>
+          </div>
+        </div>
+
+        <div class="reviews">
+          <div class="user-reviews">
+            <div class="store-rating">
+              <div class="rating">
+                <img src="image/alli/star.png" alt="star" />
+                <img src="image/alli/star.png" alt="star" />
+                <img src="image/alli/star.png" alt="star" />
+              </div>
+              <div class="store-name">
+                <h4><a href="Weclean.html">Weclean</a></h4>
+              </div>
+            </div>
+
+            <div class="comments">
+              <p>Wow nice!</p>
+            </div>
+            <div class="icons">
+              <div class="like">
+                <img src="image/alli/like.png" alt="like" />
+                <p>0</p>
+                <img src="image/alli/unlike.png" alt="unlike" />
+                <p>1</p>
+              </div>
+
+              <div class="timestamp">
+                <p>10 hours ago</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="user-reviews">
+            <div class="store-rating">
+              <div class="rating">
+                <img src="image/alli/star.png" alt="star" />
+                <img src="image/alli/star.png" alt="star" />
+                <img src="image/alli/star.png" alt="star" />
+                <img src="image/alli/star.png" alt="star" />
+              </div>
+              <div class="store-name">
+                <h4><a href="7FoldsLaundry.html">7Folds Laundry</a></h4>
+              </div>
+            </div>
+
+            <div class="comments">
+              <p>Great service! will try again</p>
+            </div>
+            <div class="icons">
+              <div class="like">
+                <img src="image/alli/like.png" alt="like" />
+                <p>5</p>
+                <img src="image/alli/unlike.png" alt="unlike" />
+                <p>0</p>
+              </div>
+
+              <div class="timestamp">
+                <p>2 hours ago</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="user-reviews">
+            <div class="store-rating">
+              <div class="rating">
+                <img src="image/alli/star.png" alt="star" />
+              </div>
+              <div class="store-name">
+                <h4>
+                  <a href="NonstopLaundryShopMalate.html"
+                    >Nonstop Laundry Shop Malate</a
+                  >
+                </h4>
+              </div>
+            </div>
+
+            <div class="comments">
+              <p>Bad service, they lost my shirt</p>
+            </div>
+            <div class="icons">
+              <div class="like">
+                <img src="image/alli/like.png" alt="like" />
+                <p>0</p>
+                <img src="image/alli/unlike.png" alt="unlike" />
+                <p>0</p>
+              </div>
+
+              <div class="timestamp">
+                <p>1 day ago</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="js/profile.js"></script>
+  </body>
+</html>
