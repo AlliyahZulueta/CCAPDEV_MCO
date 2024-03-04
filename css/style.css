@@ -496,9 +496,10 @@ section .content .content-1 {
     flex-direction: column-reverse;
 }
 
-.review-1 {
+.review-1, .comments-container {
     display: flex;
     flex-direction: column;
+    justify-content: flex-end;
 
     width: 1480px;
     height: auto;
@@ -511,6 +512,15 @@ section .content .content-1 {
     position: relative;
 
     background-color: white;
+}
+
+.comments-container {
+    display: flex;
+    flex-direction: column;
+
+    width: 1200px;
+
+    margin-left:auto;
 }
 
 .user-review-header-1 {
@@ -596,7 +606,7 @@ section .content .content-1 {
     padding-right: 10px;
 }
 
-.user-review-comment-1 .comment {
+.user-review-comment-1 .comment, .reply {
     font-size: 22px;
     text-align: justify;
 }
